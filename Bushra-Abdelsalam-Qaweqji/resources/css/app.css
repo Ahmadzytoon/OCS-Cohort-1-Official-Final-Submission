@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+        @apply bg-slate-50 text-slate-900;
+    }
+
+    a {
+        @apply transition-colors;
+    }
+
+    input,
+    select,
+    textarea {
+        @apply rounded-lg border-slate-300 focus:border-indigo-500 focus:ring focus:ring-indigo-200;
+    }
+
+    .btn {
+        @apply transition-all;
+    }
+}
