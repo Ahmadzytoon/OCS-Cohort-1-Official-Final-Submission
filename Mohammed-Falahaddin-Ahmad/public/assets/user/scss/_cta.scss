@@ -1,0 +1,149 @@
+.cta-banner-wrapper {
+    background-attachment: fixed;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+
+    .book-shape {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        @include breakpoint (max-xl) {
+            img {
+                width: 250px;
+            }
+        }
+
+        @include breakpoint(max-lg) {
+            display: none;
+        }
+    }
+
+    .book-shape-2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+
+        @include breakpoint (max-xl) {
+            img {
+                width: 250px;
+            }
+        }
+
+        @include breakpoint(max-lg) {
+            display: none;
+        }
+    }
+
+    .cta-content {
+        span {
+            position: relative;
+            color: $white;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+
+            @include breakpoint(max-lg) {
+                font-size: 25px;
+            }
+
+            @include breakpoint(max-sm) {
+                font-size: 20px;
+
+                img {
+                    width: 80px;
+                }
+            }
+
+
+            img {
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+            }
+        }
+
+        h2 {
+            margin-top: 10px;
+            color: $white;
+            font-size: 50px; 
+            font-weight: 700;
+
+            @include breakpoint(max-lg) {
+                font-size: 40px;
+            }
+
+            @include breakpoint(max-sm) {
+                font-size: 25px;
+
+                br {
+                    display: block;
+                }
+            }
+        }
+
+        .theme-btn {
+            background-color: $white;
+            color: $header-color;
+            border: 1px solid transparent;
+
+            &::before {
+                background-color: $header-color;
+            }
+
+            &:hover {
+                border-color: $white;
+                color: $white;
+            }
+        }
+    }
+}
+
+
+.cta-banner-wrapper-2 {
+    background-attachment: fixed;
+    border-radius: 20px;
+
+    .cta-content-wrappers {
+        padding: 0 120px;
+        @include flex;
+        justify-content: space-between;
+
+        @include breakpoint(max-xl) {
+            padding: 0;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .cta-texts {
+            span {
+                color: $white;
+                font-size: 25px;
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+
+            h2 {
+                @include breakpoint(max-sm) {
+                   br {
+                    display: block;
+                   }
+                }
+            }
+        }
+
+        .ctx-btn {
+            .theme-btn {
+                color: $header-color;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+
+        }
+    }
+}

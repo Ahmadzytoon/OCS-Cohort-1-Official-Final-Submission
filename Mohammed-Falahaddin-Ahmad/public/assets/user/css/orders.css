@@ -1,0 +1,17 @@
+
+        .table {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .table th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+        .badge {
+            padding: 0.4em 0.8em;
+            font-size: 0.85em;
+        }
+        .btn-outline-primary:hover {
+            background-color: #0d6efd;
+            color: white;
+        }
