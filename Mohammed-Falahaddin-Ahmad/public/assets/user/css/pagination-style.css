@@ -1,0 +1,52 @@
+/* Custom Pagination Styles */
+.pagination-area .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagination-area .page-item {
+    margin: 0;
+}
+
+.pagination-area .page-item .page-link {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% !important; /* Forces circular shape */
+    border: 1px solid #eee;
+    color: #333;
+    font-weight: 600;
+    transition: all 0.3s;
+    background: #fff;
+}
+
+.pagination-area .page-item.active .page-link {
+    background-color: #ff7b6b; /* Theme Pink */
+    border-color: #ff7b6b;
+    color: #fff;
+}
+
+.pagination-area .page-item .page-link:hover {
+    background-color: #ff7b6b;
+    border-color: #ff7b6b;
+    color: #fff;
+}
+
+.pagination-area .page-item.disabled .page-link {
+    background: #f8f9fa;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Hide the "Showing X to Y of Z results" text */
+.pagination-area nav div:first-child {
+    display: none !important;
+}
+
+.pagination-area nav div:last-child {
+    display: flex !important;
+    justify-content: center !important;
+}

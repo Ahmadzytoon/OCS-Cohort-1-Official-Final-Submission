@@ -1,0 +1,414 @@
+.feature-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 20px !important;
+    max-width: 1100px !important;
+    margin: 0 auto !important;
+}
+
+.feature-box-items {
+    height: 140px !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    padding: 20px 25px !important;
+    text-align: left !important;
+}
+
+.feature-box-items .icon {
+    flex-shrink: 0 !important;
+    width: 60px !important;
+    height: 60px !important;
+    margin-right: 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.feature-box-items .content {
+    flex: 1 !important;
+    min-width: 0 !important;
+}
+
+.feature-box-items .content h3 {
+    font-size: 17px !important;
+    margin-bottom: 5px !important;
+    font-weight: 600 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.feature-box-items .content p {
+    font-size: 13px !important;
+    margin: 0 !important;
+    opacity: 0.8 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+@media (max-width: 992px) {
+    .feature-wrapper {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .feature-wrapper {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* Book Card Consistency Styles */
+/* =========================================
+   PREMIUM MODERN E-COMMERCE STYLES
+========================================= */
+:root {
+    --theme-pink: #ff7b6b;
+    --theme-pink-light: #fff5f2;
+    --card-radius: 16px;
+    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* GLOBAL BOOK CARDS */
+.shop-box-items {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    min-height: 420px !important; /* Increased for button visibility */
+    background: #ffffff !important;
+    border: 1px solid #f0f0f0 !important;
+    border-radius: var(--card-radius) !important;
+    transition: var(--transition) !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02) !important;
+}
+
+.shop-box-items:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08) !important;
+    border-color: var(--theme-pink) !important;
+}
+
+/* Category Badge Hidden on Home */
+.category-badge {
+    display: none !important;
+}
+
+.book-thumb {
+    height: 280px !important; /* Increased from 200px to show full book covers */
+    background: #fdfdfd !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 20px !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.book-thumb img {
+    max-height: 100% !important;
+    width: auto !important;
+    object-fit: contain !important;
+    transition: var(--transition) !important;
+}
+
+.shop-box-items:hover .book-thumb img {
+    transform: scale(1.05) !important;
+}
+
+.shop-content {
+    padding: 12px !important; /* Reduced from 15px */
+    flex-grow: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+}
+
+.shop-content h5 {
+    font-size: 13px !important;
+    color: #888 !important;
+    margin-bottom: 8px !important;
+    font-weight: 500 !important;
+}
+
+.shop-content h3 {
+    font-size: 15px !important; /* Slightly smaller */
+    font-weight: 700 !important;
+    color: #1a1a1a !important;
+    height: 38px !important; /* Fixed height for alignment */
+    margin-bottom: 5px !important; /* Reduced from 8px */
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    line-height: 1.2 !important;
+}
+
+.rating-stars-short {
+    margin-bottom: 10px !important; /* Reduced from 15px */
+}
+
+.rating-stars-short i {
+    font-size: 12px !important;
+}
+
+.price-rating-row {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-top: auto !important;
+    margin-bottom: 6px !important;
+    width: 100% !important;
+}
+
+.compact-price-list {
+    display: flex !important;
+    align-items: baseline !important;
+    gap: 8px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+.compact-price-list li {
+    color: var(--theme-pink) !important;
+    font-weight: 800 !important;
+    font-size: 18px !important;
+}
+
+.compact-price-list .old-price del {
+    font-size: 13px !important;
+    color: #aaa !important;
+    font-weight: 400 !important;
+}
+
+.author-post {
+    margin-bottom: 5px !important;
+}
+
+/* Add spacing below Add to Cart button */
+.shop-box-items .shop-button {
+    padding-bottom: 10px !important;
+}
+
+/* Tighter spacing in Readit Top Books section */
+.book-shop-wrapper .shop-content {
+    padding: 8px 12px !important;
+}
+
+.book-shop-wrapper .shop-content h3 {
+    margin-bottom: 3px !important;
+}
+
+.book-shop-wrapper .price-rating-row {
+    margin-bottom: 4px !important;
+}
+
+.author-post .authot-list span {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    color: #888 !important;
+}
+
+/* HORIZONTAL CARDS (Top Rating) */
+@media (max-width: 575px) {
+    .horizontal-card {
+        flex-direction: column !important;
+    }
+    .horizontal-card .book-thumb {
+        width: 100% !important;
+        height: 200px !important;
+    }
+    .horizontal-card .category-badge {
+        top: 10px;
+        left: 10px;
+    }
+}
+
+/* REDESIGNED CATEGORY CARDS */
+.book-catagories-items {
+    height: 240px !important;
+    background: #ffffff !important;
+    border-radius: var(--card-radius) !important;
+    border: 1px solid #f0f0f0 !important;
+    padding: 25px !important;
+    transition: var(--transition) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02) !important;
+}
+
+.book-catagories-items:hover {
+    transform: scale(1.05) !important;
+    border-color: var(--theme-pink) !important;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.06) !important;
+}
+
+.book-catagories-items .book-thumb {
+    height: auto !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin-bottom: 15px !important;
+}
+
+.book-catagories-items .book-thumb p {
+    font-size: 40px !important;
+    color: var(--theme-pink) !important;
+    margin: 0 !important;
+    font-weight: 800 !important;
+    opacity: 0.1 !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+.book-catagories-items .category-icon {
+    font-size: 45px !important;
+    color: var(--theme-pink) !important;
+    margin-bottom: 20px !important;
+    filter: drop-shadow(0 4px 8px rgba(255,123,107,0.2)) !important;
+}
+
+.book-catagories-items .book-box {
+    background: var(--theme-pink-light) !important;
+    color: var(--theme-pink) !important;
+    padding: 4px 14px !important;
+    border-radius: 20px !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    margin-top: 10px !important;
+}
+
+.book-catagories-items h6 a {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #1a1a1a !important;
+    transition: 0.3s !important;
+}
+
+.book-catagories-items:hover h6 a {
+    color: var(--theme-pink) !important;
+}
+
+/* Horizontal Card Layout for Top Rating Books */
+.horizontal-card {
+    display: flex !important;
+    flex-direction: row !important;
+    min-height: auto !important;
+    height: auto !important;
+    gap: 20px !important;
+}
+
+.horizontal-card .book-thumb {
+    width: 180px !important;
+    min-width: 180px !important;
+    height: 250px !important;
+    flex-shrink: 0 !important;
+}
+
+.horizontal-card .book-thumb img {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.horizontal-card .shop-content {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    padding: 15px 10px !important;
+}
+
+.horizontal-card .shop-content h3 {
+    font-size: 16px !important;
+    margin-bottom: 10px !important;
+    height: auto !important;
+}
+
+.horizontal-card .price-rating-row {
+    margin-bottom: 10px !important;
+}
+
+.horizontal-card .shop-button {
+    margin-top: auto !important;
+}
+
+.featured-author-item {
+    display: block;
+    padding: 20px;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+}
+.featured-author-item:hover .author-img-circle {
+    transform: scale(1.05);
+    border-color: #ff7b6b;
+}
+.featured-author-item:hover .author-name-only {
+    color: #ff7b6b;
+}
+.author-img-circle {
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    margin: 0 auto 15px !important;
+    border: 4px solid #fff5f5;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+.author-img-circle img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+.author-name-only {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+/* Pink Circle Pagination */
+.author-pagination .pagination {
+    gap: 10px;
+}
+.author-pagination .page-item .page-link {
+    width: 45px;
+    height: 45px;
+    border-radius: 50% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ff7b6b;
+    color: #ff7b6b;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.author-pagination .page-item.active .page-link {
+    background-color: #ff7b6b !important;
+    border-color: #ff7b6b !important;
+    color: #fff !important;
+}
+.author-pagination .page-item .page-link:hover {
+    background-color: #fff5f5;
+}
+
+/* Smooth wishlist icon transitions */
+.wishlist-toggle i {
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+.wishlist-toggle:hover i {
+    transform: scale(1.2);
+}

@@ -1,0 +1,116 @@
+.cart-table td {
+    vertical-align: middle;
+    padding: 15px 10px;
+}
+
+.cart-table .cart-title {
+    display: block;
+}
+
+.price-display {
+    text-align: left;
+}
+
+.old-price {
+    color: #999;
+    font-size: 0.9rem;
+    text-decoration: line-through;
+    display: block;
+}
+
+.new-price {
+    color: #dc3545;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: block;
+}
+
+.cart-summary {
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.empty-cart {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+.discount-badge {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    margin-top: 3px;
+    display: inline-block;
+}
+
+.cart img {
+    border-radius: 4px;
+    object-fit: cover;
+    height: 60px;
+    width: 60px;
+}
+
+.coupon-alert {
+    position: relative;
+    padding-right: 100px;
+}
+
+.coupon-alert a {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.coupon-alert a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cart-table {
+        font-size: 0.9rem;
+    }
+    
+    .cart-table td {
+        padding: 10px 5px;
+        font-size: 0.95rem;
+    }
+    
+    .price-display {
+        font-size: 0.9rem;
+    }
+    
+    .discount-badge {
+        font-size: 0.7rem;
+        padding: 2px 6px;
+    }
+    
+    .cart-summary {
+        margin-top: 20px;
+    }
+    
+    .coupon-alert {
+        padding-right: 15px;
+        text-align: left;
+    }
+    
+    .coupon-alert a {
+        position: static;
+        transform: none;
+        display: block;
+        margin-top: 10px;
+        text-align: right;
+    }
+    
+    .cart-title a {
+        font-size: 0.95rem;
+    }
+    
+    .cart-price, .cart-total {
+        font-size: 1rem;
+    }
+}

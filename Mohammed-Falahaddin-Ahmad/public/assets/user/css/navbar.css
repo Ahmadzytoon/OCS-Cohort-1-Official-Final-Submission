@@ -1,0 +1,125 @@
+/* Creative Logo Styling */
+.readify-text {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #E85D4D;
+    font-family: 'Outfit', sans-serif;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Standardized Navbar Spacing */
+.header-main {
+    padding: 0 15px;
+}
+
+.header-right {
+    gap: 30px !important;
+}
+
+.nav-user-dropdown-wrapper, 
+.header-icon-wrapper, 
+.menu-cart {
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+}
+
+/* Style for dynamic cart count badge */
+.header-1 .header-main .header-right .menu-cart .cart-icon .number {
+    position: absolute;
+    top: -7px;
+    right: -8px;
+    width: 20px;
+    line-height: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: var(--theme);
+    color: var(--white);
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+    display: inline-block;
+}
+
+/* Wishlist & Auth icon count badge */
+.header-main .header-right .nav-user-icon .number {
+    position: absolute;
+    top: -9px;
+    right: -10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+    line-height: 18px;
+    text-align: center;
+    background-color: var(--theme);
+    color: var(--white);
+    font-size: 10px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+/* Highlight current page in user dropdown */
+.submenu li a.active-item {
+    background-color: #f8f9ff !important;
+    color: #4361ee !important;
+    font-weight: 500;
+    position: relative;
+    padding-left: 18px;
+}
+.submenu li a.active-item::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #4361ee;
+}
+.submenu li a.active-item:hover {
+    background-color: #f0f3ff !important;
+    color: #3a56e0 !important;
+}
+
+/* Improve logout button styling */
+.dropdown-logout-btn {
+    background: none !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    width: 100% !important;
+    text-align: left !important;
+    color: #e74c3c !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    border-radius: 4px !important;
+    transition: all 0.2s ease !important;
+}
+.dropdown-logout-btn:hover {
+    background-color: #fff5f5 !important;
+    color: #c0392b !important;
+    transform: translateX(3px);
+}
+.dropdown-logout-btn i {
+    margin-right: 6px !important;
+}
+
+/* Force vertical stacking only when submenus or dropdowns are active */
+.submenu, .dropdown-menu.show {
+    display: flex !important;
+    flex-direction: column !important;
+}
+.submenu li, .dropdown-menu li {
+    width: 100% !important;
+}
+.nav-user-icon {
+    font-size: 1.2rem;
+    color: #333;
+    transition: color 0.3s;
+}
+.nav-user-icon:hover {
+    color: #ff7b6b;
+}

@@ -1,0 +1,65 @@
+.order-details-section {
+    background-color: #f8f9fa;
+}
+.order-card, .order-summary-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    border: none;
+}
+.card-header-premium {
+    background: #fff;
+    padding: 25px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.card-header-premium h4, .card-header-premium h5 {
+    font-weight: 800;
+    color: #333;
+    letter-spacing: -0.5px;
+}
+.order-table thead th {
+    background: #fdfdfd;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #888;
+    border-bottom: 2px solid #f8f9fa;
+    padding: 15px 10px;
+}
+.book-mini-thumb {
+    width: 60px;
+    height: 80px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.book-mini-thumb img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.book-info h6 {
+    font-weight: 700;
+    color: #333;
+}
+.total-amount {
+    color: #ff7c6b;
+    font-weight: 800;
+    font-size: 2rem;
+}
+.badge-premium {
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 11px;
+}
+.text-pink {
+    color: #ff7c6b;
+}
+.address-details p {
+    font-size: 14px;
+    line-height: 1.6;
+}

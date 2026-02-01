@@ -1,0 +1,201 @@
+.shop-box-items {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.shop-content {
+    flex-grow: 1;
+}
+.categories-list .nav-link.active {
+    background-color: var(--theme);
+    color: #fff;
+}
+.search-container {
+    position: relative;
+}
+.search-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: none;
+    border: none;
+    padding: 0 15px;
+    color: #666;
+}
+
+/* Book Card Consistency Styles */
+.shop-box-items {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    min-height: 500px !important; /* Increased for button visibility and consistency */
+    border: 1px solid #f0f0f0 !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+}
+.book-thumb {
+    height: 280px !important; /* Increased from 200px to match home page */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 20px !important; /* Increased from 15px to match home page */
+    background: #fdfdfd !important;
+}
+.book-thumb img {
+    max-height: 100% !important;
+    width: auto !important;
+    object-fit: contain !important;
+}
+.shop-content {
+    padding: 12px !important;
+    flex-grow: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+.shop-content h3 {
+    font-size: 15px !important;
+    height: 38px !important; 
+    margin-bottom: 5px !important; /* Reduced from 8px */
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    line-height: 1.2 !important;
+}
+.price-rating-row {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-top: auto !important;
+    margin-bottom: 6px !important; /* Reduced from 12px to match home page */
+    width: 100% !important;
+}
+.shop-button {
+    padding-bottom: 10px !important; /* Added to match home page */
+}
+.compact-price-list {
+    display: flex !important;
+    align-items: baseline !important;
+    gap: 8px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+.compact-price-list li {
+    color: var(--theme);
+    font-weight: 800 !important;
+    font-size: 18px !important;
+}
+.compact-price-list .old-price del {
+    font-size: 13px !important;
+    color: #aaa !important;
+    font-weight: 400 !important;
+}
+.author-post {
+    margin-bottom: 5px !important;
+}
+.author-post .authot-list span {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    color: #888 !important;
+}
+/* Hide Category Badge */
+.category-badge {
+    display: none !important;
+}
+
+/* Category Sidebar Styles */
+.category-accordion .nav-link {
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+.category-accordion .nav-link:hover {
+    color: var(--theme);
+    background: #f8f9fa;
+}
+.category-accordion .nav-link.active {
+    color: #fff;
+    background: var(--theme);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.category-item {
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 5px;
+}
+.category-item:last-child {
+    border-bottom: none;
+}
+
+.category-header {
+    position: relative;
+}
+.category-header .main-category-link {
+    flex-grow: 1;
+    margin-right: 5px;
+}
+
+.btn-toggle {
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+}
+.btn-toggle:hover {
+    background: #f0f0f0;
+    color: var(--theme);
+}
+.btn-toggle[aria-expanded="true"] {
+    transform: rotate(180deg);
+    color: var(--theme);
+}
+
+.sub-categories {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin: 0 !important;
+    list-style: none !important;
+}
+.sub-category-link {
+    font-size: 14px;
+    padding: 8px 15px !important;
+    color: #666 !important;
+    border: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
+    width: 100% !important;
+}
+.sub-category-link:hover {
+    color: var(--theme) !important;
+    padding-left: 20px !important;
+}
+.sub-category-link.active {
+    color: var(--theme) !important;
+    font-weight: 700;
+    background: #fff5f5 !important;
+    padding-left: 20px !important;
+}
+.sub-category-link i {
+    font-size: 10px;
+    opacity: 0.5;
+    margin-right: 10px !important;
+    flex-shrink: 0 !important;
+}
+
+/* Pink Stars Override */
+.author-post .star i, .star-rating .stars i, .fa-star, .fa-star-half-alt {
+    color: #ff7b6b !important;
+}

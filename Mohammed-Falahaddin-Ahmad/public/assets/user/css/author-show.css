@@ -1,0 +1,21 @@
+/* Remove all background images from author profile page */
+.author-profile-header,
+.author-profile-wrapper,
+.shop-section,
+.container,
+body,
+section {
+    background-image: none !important;
+    background: transparent !important;
+}
+
+.author-avatar img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #ff7b6b;
+}
+
+.author-stats {
+    background: #f8f9fa !important;
+}

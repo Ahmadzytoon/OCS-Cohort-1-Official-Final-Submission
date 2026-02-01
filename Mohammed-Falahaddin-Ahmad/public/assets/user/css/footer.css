@@ -1,0 +1,32 @@
+.footer-section {
+    color: #333;
+}
+.text-pink {
+    color: #ff7b6b;
+}
+.single-footer-widget .widget-head h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    position: relative;
+}
+.single-footer-widget .widget-head h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 40px;
+    height: 2px;
+    background: #ff7b6b;
+}
+.single-footer-widget ul.list-area li {
+    margin-bottom: 12px;
+}
+.single-footer-widget ul.list-area li a:hover {
+    color: #ff7b6b !important;
+    padding-left: 5px;
+    transition: all 0.3s;
+}
+.footer-bg {
+    border-top: 1px solid #f0f0f0;
+}
